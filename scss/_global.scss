@@ -1,0 +1,39 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  // overflow-y: hidden;
+}
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.page-section{
+  height: 100vh;
+  padding: 0px 0 50px;
+  // background-image: url('../image/content/section-cover.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.close-btn{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 0;
+  padding: 5px;
+  right: 10px;
+  top: 10px;
+  &:hover{
+        background: #cacaca;
+     }
+  
+}

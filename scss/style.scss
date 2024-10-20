@@ -2,6 +2,7 @@
 @import "fonts";
 @import "reset";
 @import "global";
+@import "pay";
 
 //header
 .header{
@@ -197,6 +198,7 @@ main{
       display: flex;
       align-items: center;
       justify-content: space-between;
+      min-width: 430px;
       width: 100%;
       flex-wrap: wrap;
       gap: 5px;
@@ -271,9 +273,9 @@ main{
       position: fixed;
       display: flex;
       flex-direction: column;
+      width: 100%;
       max-width: 450px;
       min-width: 200px;
-      width: 100%;
       background: #ffffff;
       border-radius: 20px;
       padding: 20px;
@@ -335,6 +337,7 @@ main{
    &__sidebar-info{
       display: flex;
       flex-direction: column;
+      width: 100%;
       justify-content: center;
       gap: 5px;
    }
@@ -342,7 +345,9 @@ main{
    &__sidebar-text{
       font-size: 12px;
       letter-spacing: -0.3px;
+      width: 100%;
       max-width: 250px;
+      min-width: 10px;
       max-height: 50px;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -385,3 +390,9 @@ main{
       padding: 15px 20px; 
    }
 }
+
+@media screen and (max-width:1250px) {
+   .right{
+      display: none;
+   }
+ }

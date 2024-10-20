@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   $('.pay, .adress__edit, .user, .reg, .relogin, .adress, .login').css('display', 'none');
+   $('.pay, .adress__edit, .user, .card,  .reg, .relogin, .adress, .login').css('display', 'none');
 
    var $button1 = $('.header__btn-login')
    var $button2 = $('.header__btn-reg');

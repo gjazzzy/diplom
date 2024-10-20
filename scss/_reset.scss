@@ -24,14 +24,7 @@ a{
     color: inherit;
 }
 
-button{
-    @include regular;
-    cursor: pointer;
-    border-radius: 50px;
-    color: #000000;
-    background: #F2F2F2;
-    border: 1px solid #a6a6a6;
-}
+
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;

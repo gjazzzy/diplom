@@ -3,7 +3,6 @@
 @import "reset";
 @import "global";
 
-
 //header
 .header{
    position: fixed;
@@ -191,7 +190,7 @@ main{
    margin-bottom: 20px;
    width: 100%;
    background: #ffff;
-   z-index: 0;
+   z-index: 0     ;
 }
 .main{
    &__items{
@@ -217,6 +216,7 @@ main{
       width: 212px;
       border: 1px solid #a6a6a64f;
       border-radius: 20px;  
+      cursor: pointer;
       &::before{
          @include bold;
          position: absolute;
@@ -237,8 +237,8 @@ main{
 
    &__item-img{
       position: relative;
-      width: 212px;
-      height: 212px;
+      width: 210px;
+      height: 210px;
       border-radius: 20px;
       object-position: bottom;
       object-fit:cover;
@@ -253,34 +253,6 @@ main{
 
    &__item-weight{
       font-size: 12px;
-   }
-
-   &__item-counter{
-      background: #F2F2F2;
-      color: #F66A15;
-      padding: 5px 0;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      max-width: max-content;      
-   }
-
-   &__item-price{
-      margin: 0 15px;
-      font-size: 16px;
-      font-size: 18px;
-   }
-
-   &__item-btn{
-      padding: 1px 2px;
-      border: 0;
-      background:transparent;
-      &:hover{
-         background: #cacaca;
-      }
-   }
-   &__item-btn img{
-      width: 20px;
    }
 }
 
@@ -348,6 +320,7 @@ main{
       background: #ffffff;
       gap: 10px;
       padding-bottom: 10px;
+      cursor: pointer;
    }
 
    &__sidebar-img{
@@ -381,22 +354,6 @@ main{
       font-size: 12px;
    }
 
-   &__sidebar-counter{
-      background: #F2F2F2;
-      padding: 5px 0;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      max-width: max-content;      
-
-   }
-
-   &__sidebar-num{
-      margin: 0 15px;
-      font-size: 16px;
-      font-size: 18px;
-   }
-
    &__sidebar-btn{
       padding: 1px 2px;
       border: 0;
@@ -404,9 +361,6 @@ main{
       &:hover{
          background: #cacaca;
       }
-   }
-   &__sidebar-btn img{
-      width: 20px;
    }
 
    &__btn-close{    
@@ -428,16 +382,6 @@ main{
    }
 
    &__btn-pay{
-      @include bold;
-      font-size: 16px;
       padding: 15px 20px; 
-      border: 0;
-      color: #000000;
-      background: #F66A15;
-      opacity: 0.7;
-      transition: all 0.5s;
-      &:hover{
-         opacity: 1;
-      }
    }
 }
